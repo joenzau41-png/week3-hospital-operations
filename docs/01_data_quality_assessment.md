@@ -2,7 +2,7 @@
 
 **Project:** Hospital Operations, Cost & Patient Flow Intelligence
 **Programme:** AnalystLab Africa Experience Lab, Week 3
-**Author:** NZAU
+**Author:** Joel Nzau
 **Status:** Version 1.0, based on the supplied dataset pack
 
 ---
