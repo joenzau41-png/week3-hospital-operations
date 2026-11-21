@@ -1,0 +1,10 @@
+# Raw and processed data: never push patient-level data
+data/raw/
+data/processed/
+*.csv
+
+# Python and notebook 
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+.env/
