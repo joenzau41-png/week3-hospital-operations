@@ -2,7 +2,7 @@
 
 **Project:** Hospital Operations, Cost & Patient Flow Intelligence
 **Programme:** AnalystLab Africa Experience Lab, Week 3 (Track A: Data Analytics)
-**Author:** NZAU
+**Author:** Joel nzau
 **Audience:** Hospital operations manager and finance / revenue manager
 
 ---
