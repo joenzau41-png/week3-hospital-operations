@@ -178,4 +178,5 @@ Dataset pack and assignment brief provided by **AnalystLab Africa**.
 
 ## Author
 
-**NZAU**. GitHub: [joenzau41-png](https://github.com/joenzau41-png)
+**Joel Nzau**. GitHub: [joenzau41-png](https://github.com/joenzau41-png)
+            LinkedIn: [Joel (Kaloki) Nzau](www.linkedin.com/in/nzau-joel)
