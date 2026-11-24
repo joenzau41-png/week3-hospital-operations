@@ -2,7 +2,7 @@
 
 **Project:** Hospital Operations, Cost & Patient Flow Intelligence
 **Programme:** AnalystLab Africa Experience Lab, Week 3
-**Author:** NZAU
+**Author:** Joel nzau
 **Dashboard file:** `hospital_operations.pbix` (Power BI Desktop)
 **Related documents:** [01_data_quality_assessment.md](01_data_quality_assessment.md), [03_success_criteria.md](03_success_criteria.md)
 

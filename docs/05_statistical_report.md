@@ -2,7 +2,7 @@
 
 **Project:** Hospital Operations, Cost & Patient Flow Intelligence
 **Programme:** AnalystLab Africa Experience Lab, Week 3 (Track B: Data Science)
-**Author:** NZAU
+**Author:** Joel nzau
 **Notebook:** [`notebooks/track_b_analysis.ipynb`](../notebooks/track_b_analysis.ipynb)
 **Related:** [01_data_quality_assessment.md](01_data_quality_assessment.md), [04_executive_summary.md](04_executive_summary.md)
 
