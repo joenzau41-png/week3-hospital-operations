@@ -76,6 +76,22 @@ The data was inspected before any analysis, and nothing was deleted. Every issue
 
 The success criteria are defined in [`docs/03_success_criteria.md`](docs/03_success_criteria.md).
 
+## Track B: statistical investigation
+
+A Python notebook investigates how claim cost varies across encounter classes, and whether it is associated with encounter duration or insurance status.
+
+| Hypothesis | Method | Result |
+|---|---|---|
+| H1: cost differs by encounter class | Kruskal-Wallis, pairwise tests with Holm correction | Differs, medium effect (epsilon-squared 0.073). 14 of 15 class pairs differ |
+| H2: cost is associated with duration | Spearman rank correlation | rho = 0.34 overall, and it holds within classes |
+| H3: insured and uninsured costs differ | Mann-Whitney U | Uninsured encounters cost more in every class (probability 0.62) |
+
+Costs are extremely skewed, so rank-based methods were used and ANOVA was ruled out by testing its assumptions. The main limitation is repeated patients (one patient has 1,381 encounters), which was checked with two sensitivity analyses.
+
+![Pairwise comparison between classes](docs/figures/fig07_pairwise_class_comparison.png)
+
+Notebook: [`notebooks/track_b_analysis.ipynb`](notebooks/track_b_analysis.ipynb). Full report: [`docs/05_statistical_report.md`](docs/05_statistical_report.md).
+
 ## Repository structure
 
 ```
@@ -89,8 +105,12 @@ The success criteria are defined in [`docs/03_success_criteria.md`](docs/03_succ
 │   ├── 02_problem_statement.md
 │   ├── 03_success_criteria.md
 │   ├── 04_executive_summary.md
+│   ├── 05_statistical_report.md
 │   ├── kpi_definitions.md
-│   └── validation_independent_check.txt
+│   ├── validation_independent_check.txt
+│   └── figures/                  Charts from the Track B notebook
+├── notebooks/
+│   └── track_b_analysis.ipynb    Statistical investigation
 └── src/
     ├── prepare_data.py           Builds clean tables from the raw CSVs
     └── validate_kpis.py          Independent KPI check from the raw CSVs
@@ -170,7 +190,7 @@ Mark it as the date table, and relate `dim_date[Date]` to `fact_encounters[start
 
 ## Tools
 
-Power BI Desktop (Power Query, DAX), Python 3, pandas, Git and GitHub.
+Power BI Desktop (Power Query, DAX), Python 3, pandas, NumPy, SciPy, statsmodels, matplotlib, seaborn, Jupyter, Git and GitHub.
 
 ## Acknowledgements
 
